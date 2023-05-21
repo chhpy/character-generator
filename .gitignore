@@ -1,5 +1,5 @@
-/img/*
-/json/*
-/venv
-/font/*
+img/*
+json/*
+venv
+font/*
 summary.csv
