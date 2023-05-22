@@ -1,6 +1,6 @@
 venv
 __pycache__
-img/*
+images/*
 json/*
 font/*
 resources/*

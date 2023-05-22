@@ -47,7 +47,7 @@ def generate_images():
             
             # Draw the text on the image
             draw.text((10, 10), text, font=font, fill=font_color)
-            output_image = f'img/{os.path.splitext(filename)[0]}.png'
+            output_image = f'images/{os.path.splitext(filename)[0]}.png'
             
             # Save the image
             image.save(output_image)
@@ -115,8 +115,8 @@ def generate_metadata():
             # Append the text to the JSON data
             metadata['attributes'] = trait_list
             metadata['description'] = project_description
-            metadata['external_url'] = external_url
-            metadata['image'] = image
+            metadata['external_url'] = f'{external_url}'
+            metadata['image'] = f'{image}'
             metadata['name'] = project_name
 
             destination_file_path = os.path.join(metadata_path, filename)
